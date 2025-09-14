@@ -7,6 +7,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
+import NewProject from "./pages/NewProject";
 import Notes from "./pages/Notes";
 import NoteEditor from "./pages/NoteEditor";
 import NotFound from "./pages/NotFound";
@@ -30,6 +31,7 @@ const App = () => (
                 <Routes>
                   <Route path="/" element={<Dashboard />} />
                   <Route path="/projects" element={<Projects />} />
+                  <Route path="/projects/new" element={<NewProject />} />
                   <Route path="/notes" element={<Notes />} />
                   <Route path="/notes/new" element={<NoteEditor />} />
                   <Route path="/notes/:id" element={<NoteEditor />} />
